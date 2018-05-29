@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>Daily Quote</title>
+      <link rel="stylesheet"  href="css/main.css">
+    </head>
+
+
+    <body>
+      <div class="body-wrapper">
+        <div class="header-wrapper">
+          <h1>Quote Api</h1>
+        </div>
+        <div class="main-content-wrapper">
+          <button id = "getQuote">Get A Quote</button>
+
+          <p class="randomQuote" id="randomQuote">Welcome to a simple quote API. Click the button above to get a quote. Click as many times as you like, this API doesn't seem to have any daily limits. If you really love the quote, hit the button below to Tweet it. (Note if the quote is longer than the twitter maximum characters, this page will warn you automatically.)</p>
+          <p class="author"></p>
+
+        <button class="tweetQuote" onclick="tweetQuote()" disabled="true">Tweet this quote!!!</button>
+        <p id="tooLong"></p>
+        </div>
+      <script src="js/main.js"></script>
+      </div>
+    </body>
+  </html>
